@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="https://rickroll.example.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Introduction to the Rick Roll Meme">
+  <title>Introduction to the Rick Roll Meme</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <h1>Introduction to the Rick Roll Meme</h1>
+  </header>
+  
+  <main>
+    <section>
+      <p>The "Rick Roll" is one of the internet's most enduring and widespread memes. It involves unexpectedly presenting people with the music video for Rick Astley's 1987 hit song "Never Gonna Give You Up".</p>
+    </section>
+    
+    <section>
+      <h2>Origin and History</h2>
+      <p>The meme originated on the imageboard 4chan in 2007. It started as a bait-and-switch prank where users would post links supposedly leading to interesting content, but instead directed people to Rick Astley's video.</p>
+    </section>
+    
+    <section>
+      <h2>How it Works</h2>
+      <p>A typical Rick Roll might look like this:</p>
+      <div class="meme-example">
+        <p>"Check out this amazing cat video! <a href="/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=amazing_cats</a>"</p>
+      </div>
+      <p>When an unsuspecting person clicks the link, instead of seeing cute cats, they're greeted by Rick Astley's iconic dance moves and catchy chorus.</p>
+    </section>
+    
+    <section>
+      <h2>Experience the Rick Roll</h2>
+      <p>Want to see what all the fuss is about? Click the button below to experience a Rick Roll firsthand!</p>
+      <button id="rickroll-btn">Click me for a surprise!</button>
+      <div id="rickroll-video" class="rickroll-container hidden">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Cultural Impact</h2>
+      <p>The Rick Roll has become a part of internet culture, appearing in various forms across social media, websites, and even mainstream media. It's often seen as a playful prank rather than a malicious act, and many people, including Rick Astley himself, have embraced the meme.</p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Rick Roll Example. All rights reserved.</p>
+  </footer>
+  
+  <script src="scripts.js"></script>
+  <script>
+    document.getElementById('rickroll-btn').addEventListener('click', function() {
+      document.getElementById('rickroll-video').classList.remove('hidden');
+      this.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
